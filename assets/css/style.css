@@ -46,3 +46,22 @@
     padding: 100px;
     font-size: 25px;
 }
+.hire-btn{
+    padding: 12px;
+    width: 25%;
+    font-size: 20px;
+    margin-top:30px ;
+}
+#projects{
+    display: flex;
+    justify-content:space-around ;
+
+}
+.project-text{
+    text-align: center;
+    background-color:black;
+    width: 33%;
+    margin: 20px;
+    border-radius: 15px;
+    color: whitesmoke;
+}
