@@ -72,7 +72,16 @@ section{
 }
 .hire-btn:hover{
     background-color: yellowgreen;
-
+}
+#testimonies{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+#testimony{
+    display: flex;
+}
+#testimonies > h1{
+font-size: 40px;
 }
 #projects{
     display: flex;
@@ -121,6 +130,7 @@ ul{
     display: flex;
     list-style: none;
     justify-content: space-around;
+    color: white;
 }
 ul:hover{
     color: yellowgreen;
