@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.contact-form{
+    display: none;
+}
 section{
     padding: 30px;
     background-color: antiquewhite;
@@ -82,6 +85,9 @@ section{
 }
 #testimonies > h1{
 font-size: 40px;
+}
+.rating{
+    width: 50%;
 }
 #projects{
     display: flex;
