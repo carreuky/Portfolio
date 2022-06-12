@@ -168,18 +168,45 @@ i{
     font-size: 30px;
     color: white;
 }@media screen and (max-width: 1250px) {
-    .quizSection {
+    #about-me, #testimony {
         flex-direction: column;
     }
-    /* #sectB>.sectionBody>.leftside,
-    .rightside {
-        width: 100%
-    } */
-    .q {
-        font-size: 20px;
-        color: #000;
-    }
-    .quizSection>.leftPic,
-    .question_container {
+    .left , .right {
         width: 100%;
     }
+    .rating{
+        width: 100%;
+        padding: 0;
+        padding: 0px;
+        margin:0px;
+        margin-top: 50px;
+        border-radius: 15px;
+        height: 200px;
+
+    }
+    .left{
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hire-btn{
+        width: 50%;
+    }
+  #projects{
+flex-direction: column;
+margin: 0;
+padding: 0;
+  }
+  .project-text{
+    width: 100%;
+    font-size: 20px;
+      
+  }
+
+  .menu-button{
+      display: none;
+  }
+  #testimonies{
+      padding: 10px;
+  }
+}
