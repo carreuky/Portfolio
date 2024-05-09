@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ReactRotatingText from "react-rotating-text";
 import About from "../components/about";
 import Socials from "../components/socials";
+import Services from "../components/services";
 export default function Home() {
   return (
     <div className="bg-black px-12">
@@ -58,6 +59,7 @@ export default function Home() {
         />
       </section>
       <About />
+      <Services/>
     </div>
   );
 }

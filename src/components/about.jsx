@@ -11,7 +11,7 @@ export default function about() {
       className="grid lg:grid-cols-2 grid-cols-1 items-center gap-20 lg:my-20 my-5"
       id="about"
     >
-      <div className="rounded-lg h-auto border-t-4 border-b-4 border-primary-foreground transition duration-500 hover:border-primary">
+      <div className=" h-auto border-t-4 border-b-4 border-primary-foreground transition duration-500 hover:border-primary">
         <img
           src="/per.svg"
           alt="About"
