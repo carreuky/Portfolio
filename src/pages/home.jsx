@@ -5,6 +5,7 @@ import ReactRotatingText from "react-rotating-text";
 import About from "../components/about";
 import Socials from "../components/socials";
 import Services from "../components/services";
+import Skills from "../components/skills";
 export default function Home() {
   return (
     <div className="bg-black px-12">
@@ -60,6 +61,7 @@ export default function Home() {
       </section>
       <About />
       <Services/>
+      <Skills/>
     </div>
   );
 }
