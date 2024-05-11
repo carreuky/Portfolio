@@ -6,11 +6,12 @@ import About from "../components/about";
 import Socials from "../components/socials";
 import Services from "../components/services";
 import Skills from "../components/skills";
+import Projects from "../components/projects";
 export default function Home() {
   return (
     <div className="bg-black px-12">
       <Navbar />
-      <section className="grid lg:grid-cols-2 grid-cols-1 items-center lg:text-left text-center sm:h-screen py-">
+      <section className="grid lg:grid-cols-2 grid-cols-1 items-center lg:text-left text-center sm:h-screen pt-20 sm:py-2">
         <div className="lg:order-1 order-2 lg:my-0 my-10">
           <p className="text-sm uppercase font-semibold tracking-wide">
             HELLO, I&apos;M
@@ -55,13 +56,14 @@ export default function Home() {
           alt="svg"
           // width={500}
           // height={500}
-          className="w-full lg:h-[30rem] h-96 object-contain lg:order-2 order-1"
+          className="w-full lg:h-[30rem] h-64 object-contain lg:order-2 order-1 "
           // unoptimized={true}
         />
       </section>
       <About />
       <Services/>
       <Skills/>
+      <Projects/>
     </div>
   );
 }

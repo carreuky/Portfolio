@@ -11,11 +11,11 @@ export default function about() {
       className="grid lg:grid-cols-2 grid-cols-1 items-center gap-20 lg:my-20 my-5"
       id="about"
     >
-      <div className=" h-auto border-t-4 border-b-4 border-primary-foreground transition duration-500 hover:border-primary">
+      <div className=" h-auto border-t-4 border-b-4 border-primary-foreground transition duration-500 hover:border-primary flex itmes-center">
         <img
           src="/per.svg"
           alt="About"
-          className="w-auto h-auto object- "
+          className="w-full sm:h-screen h-64 object- "
           data-aos="fade-up"
         />
       </div>
