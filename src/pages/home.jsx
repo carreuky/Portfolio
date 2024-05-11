@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Fragment} from "react";
 import Navbar from "../components/navbar";
 import { Link } from "react-router-dom";
 import ReactRotatingText from "react-rotating-text";
@@ -7,9 +7,12 @@ import Socials from "../components/socials";
 import Services from "../components/services";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import Footer from "../components/Footer";
 export default function Home() {
   return (
-    <div className="bg-black px-12">
+    <Fragment>
+
+    <div className="bg-black px-12 ">
       <Navbar />
       <section className="grid lg:grid-cols-2 grid-cols-1 items-center lg:text-left text-center sm:h-screen pt-20 sm:py-2">
         <div className="lg:order-1 order-2 lg:my-0 my-10">
@@ -65,5 +68,9 @@ export default function Home() {
       <Skills/>
       <Projects/>
     </div>
+    <Footer/>
+
+    </Fragment>
+
   );
 }
