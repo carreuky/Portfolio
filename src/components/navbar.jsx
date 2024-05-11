@@ -75,16 +75,16 @@ const Navbar = () => {
         <div>
           <div
             className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${
-              isNavbarOpen ? "block p-12 md:p-0" : "hidden"
+              isNavbarOpen ? "block p-12 md:p-0 " : "hidden"
             }`}
           >
-            <ul className=" h-screen items-center justify-center text-white md:flex md:h-auto ">
+            <ul className=" h-screen items-center justify-center text-white md:flex md:h-auto hover:text-primary">
               <li
                 onClick={() => scrollToSection(homeRef)}
                 className="border-b-2 border-white  px-6 py-2  text-center decoration-1 underline-offset-8 md:border-b-0      "
               >
                 <a
-                  title="home"
+                  className="hover:text-primary hover:translate-y-1"
                   // href="#about"
                   onClick={() => setNavbarOpen(!isNavbarOpen)}
                 >
