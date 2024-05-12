@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import { ChevronRight, CircleCheck } from "lucide-react";
 import Socials from "./socials";
 export default function about() {
   useEffect(() => {

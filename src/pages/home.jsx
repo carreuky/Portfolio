@@ -7,6 +7,7 @@ import Socials from "../components/socials";
 import Services from "../components/services";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import Contact from "../components/contact";
 import Footer from "../components/Footer";
 export default function Home() {
   return (
@@ -67,6 +68,7 @@ export default function Home() {
       <Services/>
       <Skills/>
       <Projects/>
+      <Contact/>
     </div>
     <Footer/>
 
