@@ -1,8 +1,8 @@
-import React from "react";
+import React,{Fragment} from "react";
 
 export default function Skills() {
   return (
-    <section>
+    <Fragment>
       <h1 className="text-sm uppercase font-semibold tracking-wide text-center">MY EXPERTISE</h1>
       <p className=" text-center lg:text-4xl text-2xl my-5 text-primary">Professional Competencies</p>
       <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-5 my-10">
@@ -210,6 +210,6 @@ export default function Skills() {
           <p className="text-white font-bold pt-5">Mysql</p>
         </div>
       </div>
-    </section>
+    </Fragment>
   );
 }

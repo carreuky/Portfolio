@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-scroll";
 
 export default function Footer() {
   return (
@@ -15,47 +16,76 @@ export default function Footer() {
           <div>
             <ul className="lg:flex hidden space-x-5">
               <li>
-                <a
-                  href="#about"
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="about"
                   className="transition duration-500 hover:text-primary"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#services"
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="services"
                   className="transition duration-500 hover:text-primary"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#resume"
+                <Link
+                  onClick={() => {
+                    window.open(
+                      "https://drive.google.com/file/d/1NGRzfArCDIZCrj1nqkqR07IHJoZpfdAC/view?usp=sharing",
+                      "_blank"
+                    );
+                  }}
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="resume"
                   className="transition duration-500 hover:text-primary"
                 >
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#skills"
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="skills"
                   className="transition duration-500 hover:text-primary"
                 >
                   Skills
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#projects"
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="projects"
                   className="transition duration-500 hover:text-primary"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <Link
+                  ctiveClass="active"
+                  smooth
+                  spy
+                  to="hire"
+                  className="transition duration-500 hover:text-primary"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isNavbarOpen, setNavbarOpen] = useState(false);
+
+  const scrollTo = () => {
+    scroll.scrollTo(100); // Scrolling to 100px from the top of the page.
+  };
 
   useEffect(() => {
     const navbarElement = document.querySelector(".navbar");
     const handleScroll = () => {
       const screenWidth = window.innerWidth;
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
       if (screenWidth > 770) {
         // For wider screens, toggle glassmorphism based on scroll position
@@ -36,7 +41,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isNavbarOpen]);  // Re-run the effect when isNavbarOpen changes
+  }, [isNavbarOpen]); // Re-run the effect when isNavbarOpen changes
 
   return (
     <nav className="fixed md:px-12 px-4 inset-x-0  z-10 w-full bg-default py-3 navbar">
@@ -80,53 +85,100 @@ const Navbar = () => {
           >
             <ul className=" h-screen items-center justify-center text-white md:flex md:h-auto hover:text-primary">
               <li
-                onClick={() => scrollToSection(homeRef)}
+                onClick={() => scrollTo("gogg")}
                 className="border-b-2 border-white  px-6 py-2  text-center decoration-1 underline-offset-8 md:border-b-0      "
               >
-                <a
-                  className="hover:text-primary hover:translate-y-1"
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="about"
+                  className="hover:text-primary hover:translate-y-1 cursor-pointer"
                   // href="#about"
                   onClick={() => setNavbarOpen(!isNavbarOpen)}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li
                 onClick={() => scrollToSection(howRef)}
                 className="border-b-2 border-white  px-6 py-2  text-center decoration-1 underline-offset-8 md:border-b-0      "
               >
-                <a title="how" onClick={() => setNavbarOpen(!isNavbarOpen)}>
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="services"
+                  className="hover:text-primary hover:translate-y-1 cursor-pointer"
+                  onClick={() => setNavbarOpen(!isNavbarOpen)}
+                >
                   Serivices
-                </a>
+                </Link>
               </li>
               <li
                 onClick={() => scrollToSection(featuresRef)}
                 className="border-b-2 border-white  px-6 py-2  text-center decoration-1 underline-offset-8 md:border-b-0      "
               >
-                <a title="features" onClick={() => setNavbarOpen(!isNavbarOpen)}>
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="resume"
+                  className="hover:text-primary hover:translate-y-1 cursor-pointer"
+                  onClick={() => {
+                    window.open(
+                      "https://drive.google.com/file/d/1NGRzfArCDIZCrj1nqkqR07IHJoZpfdAC/view?usp=sharing",
+                      "_blank"
+                    );
+                    setNavbarOpen(!isNavbarOpen);
+                }}
+                
+                >
                   Resume
-                </a>
+                </Link>
               </li>
               <li
                 onClick={() => scrollToSection(whyRef)}
                 className="border-b-2 border-white  px-6 py-2  text-center decoration-1 underline-offset-8 md:border-b-0      "
               >
-                <a title="why" onClick={() => setNavbarOpen(!isNavbarOpen)}>
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="skills"
+                  className="hover:text-primary hover:translate-y-1 cursor-pointer"
+                  onClick={() => setNavbarOpen(!isNavbarOpen)}
+                >
                   Skills
-                </a>
+                </Link>
               </li>
               <li
                 onClick={() => scrollToSection(contactUsRef)}
                 className="border-b-2 border-white  px-6 py-2  text-center decoration-1 underline-offset-8 md:border-b-0      "
               >
-                <a title="contacts" onClick={() => setNavbarOpen(!isNavbarOpen)}>
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="projects"
+                  className="hover:text-primary hover:translate-y-1 cursor-pointer"
+                  onClick={() => setNavbarOpen(!isNavbarOpen)}
+                >
                   Projects
-                </a>
+                </Link>
               </li>
               <li className=" border-b-2 border-white px-5  py-3 text-center bg-primary     md:border-b-0  ">
-                <a href="/vvkj" onClick={() => setNavbarOpen(!isNavbarOpen)}>
+                <Link
+                  activeClass="active"
+                  smooth
+                  spy
+                  to="hire"
+                  className="hover:translate-y-1 cursor-pointer"
+                  href="/vvkj"
+                  onClick={() => setNavbarOpen(!isNavbarOpen)}
+                >
                   Hire Me
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

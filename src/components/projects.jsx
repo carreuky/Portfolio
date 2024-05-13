@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Fragment} from "react";
 import { Link } from "lucide-react";
 
 export default function projects() {
@@ -41,7 +41,7 @@ export default function projects() {
     },
   ];
   return (
-    <section>
+    <Fragment>
       <h1 className="text-sm uppercase font-semibold tracking-wide text-center">
         RECENT HIGHLIGHTS
       </h1>
@@ -81,6 +81,6 @@ export default function projects() {
           </div>
         </div>
       ))}
-    </section>
+    </Fragment>
   );
 }

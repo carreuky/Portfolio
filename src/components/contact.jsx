@@ -1,10 +1,10 @@
-import React from "react";
+import React,{Fragment} from "react";
 import { ChevronRight, CircleCheck } from "lucide-react";
 import Socials from "./socials";
 import Form from "./form";
 export default function contact() {
   return (
-    <section>
+    <Fragment >
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-20 pb-5 ">
         <div className="">
           <p className="text-sm uppercase font-semibold tracking-wide">
@@ -40,10 +40,12 @@ export default function contact() {
               hello? Don’t be a stranger—get in touch!
             </li>
           </ul>
-          <Socials/>
+          <Socials />
         </div>
-        <div><Form/></div>
+        <div>
+          <Form />
+        </div>
       </div>
-    </section>
+    </Fragment>
   );
 }
