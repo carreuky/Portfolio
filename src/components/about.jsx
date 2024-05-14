@@ -7,7 +7,7 @@ export default function about() {
     AOS.init({});
   }, []);
   return (
-    <Fragment className="">
+    <Fragment>
    
         <div className=" h-auto border-t-4 border-b-4 border-primary-foreground transition duration-500 hover:border-primary flex itmes-center">
           <img

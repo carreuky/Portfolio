@@ -41,15 +41,11 @@ export default function intro() {
           >
             Download Resume
           </button>
-          <Link
-            activeClass="active"
-            smooth
-            spy
-            to="hire"
-            className="lg:w-auto w-full bg-primary p-4 cursor-pointer"
-          >
-            Contact Me
-          </Link>
+          <button className="lg:w-auto w-full bg-primary p-4 cursor-pointer">
+            <Link activeClass="active" smooth spy to="hire">
+              Contact Me
+            </Link>
+          </button>
         </div>
         <Socials />
       </div>
