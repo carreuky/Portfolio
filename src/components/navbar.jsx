@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="justify-between  md:flex md:items-center ">
         <div className="flex items-center justify-between py-3 md:block md:py-5">
           {/* LOGO */}
-          <a href={"/"} className={`text-2xl bg-[#1C1678] rounded-full p-3`}>
+          <a href={"/"} className={`text-2xl bg-primary rounded-full p-3`}>
             <span className="text">K</span>
             <span className="text">N</span>
           </a>
@@ -188,7 +188,7 @@ const Navbar = () => {
     // <div className="sticky top-0 z-10 navbar ">
     //   <div className="flex justify-between items-center py-4  mx-auto">
     //     <div className="border flex items-center justify-between py-3 md:block md:py-5">
-    //       <a href={"/"} className={`text-2xl bg-[#1C1678] rounded-full p-3`}>
+    //       <a href={"/"} className={`text-2xl bg-prmary rounded-full p-3`}>
     //         <span className="text">K</span>
     //         <span className="text">N</span>
     //       </a>
