@@ -1,5 +1,5 @@
 import React,{Fragment} from "react";
-import { ChevronRight, CircleCheck } from "lucide-react";
+import { CircleCheck } from "lucide-react";
 import Socials from "./socials";
 import Form from "./form";
 export default function contact() {
