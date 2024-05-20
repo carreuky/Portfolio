@@ -78,7 +78,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  ctiveClass="active"
+                  activeClass="active"
                   smooth
                   spy
                   to="hire"
