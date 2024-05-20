@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function form() {
   const [formData, setFormData] = useState({
@@ -19,11 +21,9 @@ export default function form() {
     });
   };
 
-  console.log(formData);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(form_id, {
+    const response = await fetch(import.meta.env.VITE_FORM, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,9 +39,25 @@ export default function form() {
         phone_number: "",
         message: "",
       });
-      // setStatus('SUCCESS');
+      toast.success("Message sent!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+      });
     } else {
-      // setStatus('ERROR');
+      toast.error("An error occurred. Please try again.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+      });
     }
   };
 
@@ -155,6 +171,19 @@ export default function form() {
           Send Message
         </button>
       </div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition:Bounce
+      />
     </form>
   );
 }
