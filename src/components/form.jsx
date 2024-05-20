@@ -40,8 +40,8 @@ export default function form() {
         message: "",
       });
       toast.success("Message sent!", {
-        position: "top-center",
-        autoClose: 7000,
+        position: "bottom-right",
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -50,7 +50,7 @@ export default function form() {
       });
     } else {
       toast.error("An error occurred. Please try again.", {
-        position: "top-center",
+        position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
