@@ -112,7 +112,7 @@ const Navbar = () => {
                   className="hover:text-primary hover:translate-y-1 cursor-pointer"
                   onClick={() => setNavbarOpen(!isNavbarOpen)}
                 >
-                  Serivices
+                  Services
                 </Link>
               </li>
               <li

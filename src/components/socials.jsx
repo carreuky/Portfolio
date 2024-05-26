@@ -19,7 +19,7 @@ export default function socials() {
       </li>
       <li>
         <a
-          href="nkedin.com/in/kelvin-nderitu-5845b3208/"
+          href="https://www.linkedin.com/in/kelvin-nderitu-5845b3208/"
           target="_blank"
           rel="noopener noreferrer"
         >
