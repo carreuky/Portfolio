@@ -36,7 +36,7 @@ export default function projects() {
       description:
         "LughaLink is set to revolutionize the way businesses and language professionals collaborate. With a focus on industry-specific expertise, our platform promises a seamless, effective translation experience tailored to your unique business needs or linguistic skills.",
       image: "/img/projects/3.png",
-      link: "https://lugha.netlify.app/",
+      link: "https://lughalink.com/",
       imagePosition: "right",
     },
   ];
