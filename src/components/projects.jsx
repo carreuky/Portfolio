@@ -1,4 +1,4 @@
-import React,{Fragment} from "react";
+import React, { Fragment } from "react";
 import { Link } from "lucide-react";
 
 export default function projects() {
@@ -60,14 +60,22 @@ export default function projects() {
                 : "lg:order-2 order-1"
             }`}
           >
-            <img src={project.image} alt="Javascript" className="h-60" />
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <img src={project.image} alt="Javascript" className="h-60" />
+            </a>
           </div>
           <div
             className={`${
               project.imagePosition === "left" ? "order-2" : "order-1"
             }`}
           >
-            <p className="text-primary uppercase">{project.type}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              className="text-primary uppercase"
+            >
+              {project.type}
+            </a>
             <h4 className="lg:text-4xl text-2xl my-5 font-bold hover:text-primary transition duration-500">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.title}
