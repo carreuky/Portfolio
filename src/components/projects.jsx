@@ -13,13 +13,21 @@ export default function projects() {
       imagePosition: "left",
     },
     {
+      title:'Farmox GYM',
+      type:'Website',
+      description:'A leading manufacturer of high-quality strength gym equipment based in Kenya',
+      image: "/img/projects/7.png",
+      link: "https://farmoxgymequipment.com/",
+      imagePosition: "right",
+    },
+    {
       title: "Coded Africa",
       type: "Website",
       description:
         "Coded Afrika a program for the next generation to equip them on crafting innovative solutions for Africa's most pressing challenges.",
       image: "/img/projects/5.png",
       link: "https://coded-africa.vercel.app/",
-      imagePosition: "right",
+      imagePosition: "left",
     },
     {
       title: "Ed3D Prints",
