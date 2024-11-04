@@ -4,6 +4,15 @@ import { Link } from "lucide-react";
 export default function projects() {
   const projects = [
     {
+      title: "Entrust Productions",
+      type: "Website",
+      description:
+        "Entrust Productions is more than an event planning company; they are a one-stop destination for all things event-related, from concept to execution.",
+      image: "/img/projects/8.png",
+      link: "https://entrustproductions.co.ke",
+      imagePosition: "right",
+    },
+    {
       title: "Wachira Speaks",
       type: "Website",
       description:
@@ -13,9 +22,19 @@ export default function projects() {
       imagePosition: "left",
     },
     {
-      title:'Farmox GYM',
-      type:'Website',
-      description:'A leading manufacturer of high-quality strength gym equipment based in Kenya',
+      title: "Lugha Link",
+      type: "Website",
+      description:
+        "LughaLink is set to revolutionize the way businesses and language professionals collaborate. With a focus on industry-specific expertise, our platform promises a seamless, effective translation experience tailored to your unique business needs or linguistic skills.",
+      image: "/img/projects/3.png",
+      link: "https://lughalink.com/",
+      imagePosition: "right",
+    },
+    {
+      title: "Farmox GYM",
+      type: "Website",
+      description:
+        "A leading manufacturer of high-quality strength gym equipment based in Kenya",
       image: "/img/projects/7.png",
       link: "https://farmoxgymequipment.com/",
       imagePosition: "right",
@@ -38,15 +57,7 @@ export default function projects() {
       link: "https://bespoke-medovik-6801ad.netlify.app/",
       imagePosition: "left",
     },
-    {
-      title: "Lugha Link",
-      type: "Website",
-      description:
-        "LughaLink is set to revolutionize the way businesses and language professionals collaborate. With a focus on industry-specific expertise, our platform promises a seamless, effective translation experience tailored to your unique business needs or linguistic skills.",
-      image: "/img/projects/3.png",
-      link: "https://lughalink.com/",
-      imagePosition: "right",
-    },
+   
   ];
   return (
     <Fragment>
