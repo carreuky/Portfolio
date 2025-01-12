@@ -26,10 +26,20 @@ export default function projects() {
       type: "Website",
       description:
         "LughaLink is set to revolutionize the way businesses and language professionals collaborate. With a focus on industry-specific expertise, our platform promises a seamless, effective translation experience tailored to your unique business needs or linguistic skills.",
-      image: "/img/projects/3.png",
+      image: "/img/projects/10.png",
       link: "https://lughalink.com/",
       imagePosition: "right",
     },
+    {
+      title: "Peakreach",
+      type: "Website",
+      description:
+        "PeakReach is a Global call center where customer satisfaction, advanced technology, and sustainability converge. React and Bootstrap used to deliver the project",
+      image: "/img/projects/9.png",
+      link: "https://www.peakreach.co.ke/",
+      imagePosition: "left",
+    },
+   
     {
       title: "Farmox GYM",
       type: "Website",
@@ -55,7 +65,7 @@ export default function projects() {
         "ED3D is a 3D printing service that brings you the best design and highest quality products at an affordable price. We use all of our own technology to help you print your designs in record time, so you can get back to doing what you love.",
       image: "/img/projects/4.png",
       link: "https://bespoke-medovik-6801ad.netlify.app/",
-      imagePosition: "left",
+      imagePosition: "right",
     },
    
   ];
