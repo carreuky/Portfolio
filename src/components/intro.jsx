@@ -34,7 +34,7 @@ export default function intro() {
             className="lg:w-auto w-full border-primary border p-4"
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1NGRzfArCDIZCrj1nqkqR07IHJoZpfdAC/view?usp=sharing",
+                "https://drive.google.com/file/d/15pkFk6eNr-J0OKEM4kxeAmG4o1ZCuQgU/view",
                 "_blank"
               );
             }}
